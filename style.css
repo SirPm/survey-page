@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ body {
+    background: linear-gradient(rgba(1, 71, 56, 0.7), rgba(8, 219, 174, 0.7), rgba(1, 51, 34, 0.7)), url('back-laptop-view.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    color: white;
+}
+
+/* .image-div {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: -2;
+    
+}
+
+.image-div img {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+} */
+
+.my-container {
+    width: 70%;
+    margin: 3rem auto;
+}
+
+#heading {
+    text-align: center;
+}
+
+#intro-text {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+form {
+    border: 1px solid rgba(1, 71, 56, 0.7);
+    border-radius: 0.5rem;
+    padding: 2rem;
+    background: rgba(1, 71, 56, 0.8);
+}
+
+.first-info {
+    display: block;
+}
+
+.personal-details, #option, #favourite {
+    width: 100%;
+    height: 2.3rem;
+    border-radius: 0.3rem;
+    border: 1px solid white;
+    margin-top: 0.3rem;
+    margin-bottom: 0.9rem;
+} 
+
+.personal-details {
+    padding: 1rem;
+}
+
+#option, #favourite {
+    padding: 0.6rem;
+}
+
+#recommend, #improvement {
+    font-size: 1.3rem;
+    margin-bottom: 0.4rem;
+}
+
+.radios label {
+    display: block;
+    position: relative;
+    padding-left: 25px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.radios label input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 15px;
+    width: 15px;
+    background-color: rgba(1, 51, 34, 0.7);
+    border-radius: 50%;
+}
+
+/* .radios:hover input ~ .checkmark {
+    background-color: rgba(9, 163, 130, 0.7);
+} */
+
+.radios label input:checked ~ .checkmark {
+    background-color: rgba(8, 219, 174, 0.7);
+}
+
+.radios label {
+    cursor: pointer;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.radios label input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.radios label .checkmark:after {
+    top: 5px;
+    left: 5px;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: white;
+}
+
+#fav-label {
+    display: inline-block;
+    margin-top: 1rem;
+}
+
+.check-boxes input {
+    margin-right: 1%;
+}
+
+#text-area {
+    display: block;
+    margin-top: 1rem;
+    margin-left: 0.3rem;
+    margin-bottom: 0.4rem;
+}
+
+#comments-suggestions {
+    width: 100%;
+    height: 10vh;
+    padding: 0.4rem 0.6rem;
+    border: 1px solid grey;
+    border-radius: 0.6rem;
+}
+
+#submit {
+    width: 100%;
+    margin-top: 1rem;
+    height: 6vh;
+    background-color: rgb(43, 180, 43);
+    color: white;
+    border: 1px solid rgb(43, 180, 43);
+    border-radius: 0.4rem;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+#submit:hover {
+    background-color: rgba(1, 51, 34, 0.7);
+    border: 1px solid rgba(1, 51, 34, 0.7);
+}
+
+@media screen and (max-width: 500px) {
+    .my-container {
+        width: 95%;
+    }
+}

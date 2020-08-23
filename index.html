@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Survey Page</title>
+</head>
+<body>
+    <!-- <div class="image-div">
+        <img src="back-laptop-view.jpg" alt="bg">
+    </div> -->
+    <div class="my-container">
+        <h1 id="heading">ScholarNetwork Survey Form</h1>
+        <p id="intro-text">Thank you for taking the time to help us improve the platform</p>
+        <form>
+            <label class="first-info" for="name">Name</label>
+            <input type="text" id="name" placeholder="Enter your name" class="personal-details">
+            <label class="first-info" for="email">Email</label>
+            <input type="email" id="email" placeholder="Enter your Email" class="personal-details">
+            <label class="first-info" for="age">Age (optional)</label>
+            <input type="number" id="age" placeholder="Age" class="personal-details">
+            <label class="first-info" for="option">Which option best describes your current role?</label>
+            <select name="option" id="option">
+                <option value="default">Select current role</option>
+                <option value="student">Student</option>
+                <option value="ftj">Full Time Job</option>
+                <option value="ftl">Full Time Learner</option>
+                <option value="pnts">Prefer not to say</option>
+                <option value="other">Other</option>
+            </select>
+
+            <!-- Radio Buttons Section -->
+            <h2 id="recommend">Would you recommend ScholarNetwork to a friend?</h2>
+
+            <div class="radios">
+                <label for="d">Definitely
+                    <input type="radio" name="recommend" id="d">
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+            <div class="radios">
+                <label for="m">Maybe
+                    <input type="radio" name="recommend" id="m">
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+            <div class="radios">
+                <label for="n">Not sure
+                    <input type="radio" name="recommend" id="n">
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+
+            <!-- Second Select -->
+            <label id="fav-label" for="favourite">What is your favourite feature at ScholarNetwork?</label>
+            <select name="favourite" id="favourite">
+                <option value="default">Select an option</option>
+                <option value="challenges">Challenges</option>
+                <option value="projects">Projects</option>
+                <option value="community">Community</option>
+                <option value="opensource">Open Source</option>
+                <option value="online">Online Video Meetups</option>
+            </select>
+
+            <!-- Check Box Section -->
+            <h2 id="improvement">What would you like to see improved? (Check all that apply)</h2>
+
+            <div class="check-boxes">
+                <input type="checkbox" name="front" id="front" value="front-end">
+                <label for="front">Front-end Projects</label>
+            </div>
+            <div class="check-boxes">
+                <input type="checkbox" name="back" id="back" value="back-end">
+                <label for="back">Back-end Projects</label>
+            </div>
+            <div class="check-boxes">
+                <input type="checkbox" name="data" id="data" value="data-visualization">
+                <label for="data">Data Visualization</label>
+            </div>
+            <div class="check-boxes">
+                <input type="checkbox" name="challenges" id="challenges" value="challenges">
+                <label for="challenges">Challenges</label>
+            </div>
+            <div class="check-boxes">
+                <input type="checkbox" name="opensource" id="opensource" value="opensource">
+                <label for="opensource">Open Source Community</label>
+            </div>
+            <div class="check-boxes">
+                <input type="checkbox" name="helprooms" id="helprooms" value="helprooms">
+                <label for="helprooms">Gitter help rooms</label>
+            </div>
+            <div class="check-boxes">
+                <input type="checkbox" name="videos" id="videos" value="videos">
+                <label for="videos">Videos</label>
+            </div>
+            <div class="check-boxes">
+                <input type="checkbox" name="meetups" id="meetups" value="meetups">
+                <label for="meetups">Online Meetups</label>
+            </div>
+            <div class="check-boxes">
+                <input type="checkbox" name="wiki" id="wiki" value="wiki">
+                <label for="wiki">Wiki</label>
+            </div>
+            <div class="check-boxes">
+                <input type="checkbox" name="forum" id="forum" value="forum">
+                <label for="forum">Forum</label>
+            </div>
+            <div class="check-boxes">
+                <input type="checkbox" name="additional-courses" id="additional-courses" value="additional-courses">
+                <label for="additional-courses">Additional Courses</label>
+            </div>
+            
+            <label id="text-area" for="comments-suggestions">Any comments or suggestions?</label>
+            <textarea name="comments-suggestions" id="comments-suggestions">Enter your comment here...</textarea>
+            <input type="submit" id="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
